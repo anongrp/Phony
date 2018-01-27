@@ -1,0 +1,47 @@
+*{
+
+}
+#status_bar{
+    -fx-background-color: #2f5bff;
+}
+.nav-bar{
+    -fx-background-color: #2f5bff;
+    -fx-background-radius: 0;
+    -fx-text-fill: #ffffff;
+}
+.black{
+    -fx-background-color: #2a2e37;
+}
+.white{
+    -fx-background-color: #fff;
+}
+.primary{
+    -fx-background-color: #4470ff;
+}
+.tab{
+    -fx-pref-width: 129.5px;
+    -fx-background-insets: 0 0 10px 10px;
+}
+.tab-header-background{
+    -fx-background-color: #4470ff;
+}
+.dropshadow{
+    -fx-effect: dropshadow(gaussian,black,10,0.1,0,0);
+}
+.separator *.line{
+    -fx-background-color: gray;
+}
+.separator{
+    -fx-background-color: #fff;
+}
+#phoneNo_status{
+    -fx-background-color: #fff;
+}
+
+.phone_btn{
+    -fx-pref-width: 133;
+    -fx-pref-height: 55;
+    -fx-text-fill: gray;
+    -fx-background-radius: 50;
+    -fx-font-size: 25;
+}

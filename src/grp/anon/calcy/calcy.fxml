@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@calcy_style.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grp.anon.calcy.Calcy">
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.20001220703125" minWidth="10.0" prefWidth="87.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.39996337890625" minWidth="10.0" prefWidth="214.39996337890625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.4000244140625" minWidth="10.0" prefWidth="81.60003662109375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton prefHeight="42.0" prefWidth="96.0" styleClass="nav-bar" text=" ">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="38.0" prefWidth="214.0" styleClass="nav-bar" text=" " GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="37.0" prefWidth="90.0" styleClass="nav-bar" text=" " GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/context.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <HBox fx:id="status_bar" prefHeight="26.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="26.0" prefWidth="35.0" text="4G" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <ProgressBar prefHeight="18.0" prefWidth="29.0" progress="0.76">
+               <HBox.margin>
+                  <Insets left="280.0" top="5.0" />
+               </HBox.margin>
+            </ProgressBar>
+            <Label text="80%" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="143.0" prefWidth="400.0">
+               <children>
+                  <VBox layoutX="2.0" layoutY="1.0" prefHeight="162.0" prefWidth="400.0" styleClass="white">
+                     <children>
+                        <Label prefHeight="41.0" prefWidth="70.0" text="RAD">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="show_status" alignment="CENTER_RIGHT" editable="false" prefHeight="39.0" prefWidth="401.0" styleClass="white">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="show_ans" alignment="CENTER_RIGHT" editable="false" prefHeight="35.0" prefWidth="400.0" styleClass="white">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="382.0" prefWidth="400.0" styleClass="black">
+               <children>
+                  <JFXButton fx:id="btn7" layoutY="1.0" onAction="#calculate" styleClass="calcy_num" text="7" />
+                  <JFXButton fx:id="btn4" layoutY="96.0" onAction="#calculate" styleClass="calcy_num" text="4" />
+                  <JFXButton fx:id="btn1" layoutY="191.0" onAction="#calculate" styleClass="calcy_num" text="1" />
+                  <JFXButton fx:id="dotBtn" layoutY="286.0" onAction="#calculate" styleClass="calcy_num" text="." />
+                  <JFXButton fx:id="btn8" layoutX="100.0" layoutY="1.0" onAction="#calculate" styleClass="calcy_num" text="8" />
+                  <JFXButton fx:id="btn5" layoutX="100.0" layoutY="96.0" onAction="#calculate" styleClass="calcy_num" text="5" />
+                  <JFXButton fx:id="btn2" layoutX="100.0" layoutY="191.0" onAction="#calculate" styleClass="calcy_num" text="2" />
+                  <JFXButton fx:id="btn0" layoutX="100.0" layoutY="286.0" onAction="#calculate" styleClass="calcy_num" text="0" />
+                  <JFXButton fx:id="delBtn" layoutX="300.0" layoutY="1.0" onAction="#calculate" styleClass="calcy_operation" text="DEL" />
+                  <JFXButton fx:id="mulBtn" layoutX="297.0" layoutY="150.0" onAction="#calculate" styleClass="calcy_operation" text="x" />
+                  <JFXButton fx:id="subBtn" layoutX="300.0" layoutY="225.0" onAction="#calculate" styleClass="calcy_operation" text="-" />
+                  <JFXButton fx:id="addBtn" layoutX="300.0" layoutY="300.0" onAction="#calculate" styleClass="calcy_operation" text="+" />
+                  <JFXButton fx:id="btn9" layoutX="200.0" layoutY="1.0" onAction="#calculate" styleClass="calcy_num" text="9" />
+                  <JFXButton fx:id="btn6" layoutX="200.0" layoutY="96.0" onAction="#calculate" styleClass="calcy_num" text="6" />
+                  <JFXButton fx:id="btn3" layoutX="200.0" layoutY="191.0" onAction="#calculate" styleClass="calcy_num" text="3" />
+                  <JFXButton fx:id="eqlBtn" layoutX="200.0" layoutY="286.0" onAction="#calculate" styleClass="calcy_num" text="=" />
+                  <JFXButton fx:id="divBtn" layoutX="300.0" layoutY="76.0" onAction="#calculate" styleClass="calcy_operation" text="/" />
+                  <Pane layoutX="377.0" prefHeight="382.0" prefWidth="26.0" styleClass="calcy_scientific" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

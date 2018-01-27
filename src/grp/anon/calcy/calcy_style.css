@@ -1,0 +1,38 @@
+*{
+
+}
+#status_bar{
+	-fx-background-color: #35d1ff;
+}
+.nav-bar{
+	-fx-background-color: #35d1ff;
+	-fx-background-radius: 0;
+	-fx-text-fill: #ffffff;
+}
+.calcy_num{
+	-fx-background-color: #2a2e37;
+	-fx-pref-width: 100px;
+	-fx-text-fill: #fff;
+	-fx-pref-height: 95px;
+	-fx-border-radius: 0;
+	-fx-background-radius: 0;
+	-fx-font-size: 30px;
+}
+.calcy_operation{
+	-fx-background-color: #67717d;
+	-fx-pref-width: 80px;
+	-fx-text-fill: #fff;
+	-fx-pref-height: 82px;
+	-fx-border-radius: 0;
+	-fx-background-radius: 0;
+	-fx-font-size: 20px;
+}
+.calcy_scientific{
+	-fx-background-color: rgba(1, 241, 168, 1);
+}
+.black{
+	-fx-background-color: #2a2e37;
+}
+.white{
+	-fx-background-color: #fff;
+}

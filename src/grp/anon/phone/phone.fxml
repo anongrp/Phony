@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@phone_style.css" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.20001220703125" minWidth="10.0" prefWidth="87.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.39996337890625" minWidth="10.0" prefWidth="214.39996337890625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.4000244140625" minWidth="10.0" prefWidth="81.60003662109375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton prefHeight="42.0" prefWidth="96.0" styleClass="nav-bar" text=" ">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="38.0" prefWidth="214.0" styleClass="nav-bar" text=" " GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="37.0" prefWidth="90.0" styleClass="nav-bar" text=" " GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/context.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </bottom>
+   <top>
+      <HBox fx:id="status_bar" prefHeight="26.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="26.0" prefWidth="35.0" text="4G" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <ProgressBar prefHeight="18.0" prefWidth="29.0" progress="0.76">
+               <HBox.margin>
+                  <Insets left="280.0" top="5.0" />
+               </HBox.margin>
+            </ProgressBar>
+            <Label text="80%" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTabPane layoutY="59.0" prefHeight="486.0" prefWidth="400.0" styleClass="primary">
+               <tabs>
+                  <Tab text=" ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #e7e7e7;">
+                           <children>
+                              <AnchorPane layoutY="107.0" prefHeight="340.0" prefWidth="400.0">
+                                 <styleClass>
+                                    <String fx:value="dropshadow" />
+                                    <String fx:value="white" />
+                                 </styleClass>
+                                 <children>
+                                    <Separator layoutY="56.0" prefHeight="8.0" prefWidth="400.0" />
+                                    <TextField fx:id="phoneNo_status" layoutX="6.0" layoutY="6.0" prefHeight="46.0" prefWidth="339.0" promptText="     Enter number or keyword">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </TextField>
+                                    <JFXButton layoutX="345.0" layoutY="6.0" prefHeight="47.0" prefWidth="52.0" text="&lt;" />
+                                    <JFXButton layoutY="64.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="1" />
+                                    <JFXButton layoutY="119.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="4" />
+                                    <JFXButton layoutY="174.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="7" />
+                                    <JFXButton layoutX="133.0" layoutY="64.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="2" />
+                                    <JFXButton layoutX="133.0" layoutY="119.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="5" />
+                                    <JFXButton layoutX="133.0" layoutY="174.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="8" />
+                                    <JFXButton layoutX="266.0" layoutY="64.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="3" />
+                                    <JFXButton layoutX="266.0" layoutY="119.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="6" />
+                                    <JFXButton layoutX="266.0" layoutY="174.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="9" />
+                                    <JFXButton layoutY="229.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="*" />
+                                    <JFXButton layoutX="133.0" layoutY="229.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="0" />
+                                    <JFXButton layoutX="266.0" layoutY="229.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="#" />
+                                    <JFXButton layoutY="284.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="Jio 4G 1" />
+                                    <JFXButton layoutX="133.0" layoutY="284.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text="Idea 02" />
+                                    <JFXButton layoutX="266.0" layoutY="284.0" prefHeight="42.0" prefWidth="64.0" styleClass="phone_btn" text=" ">
+                                       <graphic>
+                                          <ImageView fitHeight="41.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../resources/icons/ic_allapps.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </JFXButton>
+                                 </children>
+                              </AnchorPane>
+                           </children></AnchorPane>
+                    </content>
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons/phone_white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+                  <Tab text=" ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="white" />
+                    </content>
+                     <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons/clock_white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+                  <Tab text=" ">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="white" />
+                    </content>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons/people_white.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+            <AnchorPane layoutY="-1.0" prefHeight="64.0" prefWidth="400.0" styleClass="primary">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Text>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,17 @@
+*{
+
+}
+#status_bar{
+	-fx-background-color: #dddddd;
+}
+.nav-bar{
+	-fx-background-color: #dddddd;
+	-fx-background-radius: 0;
+	-fx-text-fill: #ffffff;
+}
+.red{
+	-fx-background-color: #ff2d2b;
+}
+.youtube{
+
+}

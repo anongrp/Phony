@@ -1,0 +1,45 @@
+*{
+
+}
+#status_bar{
+	-fx-background-color: #2a2e37;
+}
+#screen{
+	-fx-background-image:url("../resources/wallpaper2.jpg");
+	-fx-background-position:center;
+	-fx-background-size: 400 700;
+}
+.nav-bar{
+	-fx-background-color: #000000;
+	-fx-background-radius: 0;
+	-fx-text-fill: #ffffff;
+}
+.apps{
+	-fx-background-color: rgba(73, 73, 73, 0.8);
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 10;
+}
+.launcher_screen_status_point{
+	-fx-background-color: #ffffff;
+	-fx-background-radius: 100;
+	-fx-pref-width: 10;
+	-fx-pref-height: 10;
+}
+.active_point{
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}
+
+.progress-bar > .bar {
+	-fx-background-color: linear-gradient(
+			from 0px .75em to .75em 0px,
+			repeat,
+			-fx-accent 0%,
+			-fx-accent 49%,
+			derive(-fx-accent, 30%) 50%,
+			derive(-fx-accent, 30%) 99%
+	);
+}
+.progress-bar > .indicator{
+
+}
