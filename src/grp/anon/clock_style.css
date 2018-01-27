@@ -1,0 +1,29 @@
+*{
+
+}
+#status_bar{
+	-fx-background-color: #2a2e37;
+}
+#screen{
+	-fx-background-image:url("../resources/wallpaper2.jpg");
+	-fx-background-position:center;
+	-fx-background-size: 400 700;
+}
+.nav-bar{
+	-fx-background-color: #000000;
+	-fx-background-radius: 0;
+	-fx-text-fill: #ffffff;
+}
+.menu-id{
+	-fx-background-color:#4433AF;
+	-fx-pref-width:87px;
+}
+.tabpane{
+	-fx-background-color:#4433AF;
+}
+#btn1{
+	-fx-background-image:url(earth-btn.png);
+	-fx-border-radius:50px;
+	-fx-background-color:#4433AF;
+	-fx-pref-width:40px;
+}
