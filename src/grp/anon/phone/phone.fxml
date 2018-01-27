@@ -135,7 +135,7 @@
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../resources/icons/phone_white.png" />
+                              <Image url="@../resources/icons/phone_material.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -147,7 +147,7 @@
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../resources/icons/clock_white.png" />
+                              <Image url="@../resources/icons/clock_material.png" />
                            </image>
                         </ImageView>
                      </graphic>
