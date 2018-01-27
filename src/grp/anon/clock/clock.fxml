@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" stylesheets="@clock_style.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox fx:id="status_bar" prefHeight="26.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="26.0" prefWidth="35.0" text="4G" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <ProgressBar prefHeight="18.0" prefWidth="29.0" progress="0.76">
+               <HBox.margin>
+                  <Insets left="280.0" top="5.0" />
+               </HBox.margin>
+            </ProgressBar>
+            <Label text="80%" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.20001220703125" minWidth="10.0" prefWidth="87.60003662109375" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.39996337890625" minWidth="10.0" prefWidth="214.39996337890625" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.4000244140625" minWidth="10.0" prefWidth="81.60003662109375" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton prefHeight="42.0" prefWidth="96.0" styleClass="nav-bar" text=" ">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="38.0" prefWidth="214.0" styleClass="nav-bar" text=" " GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton prefHeight="37.0" prefWidth="90.0" styleClass="nav-bar" text=" " GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/icons/context.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #4433AF;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="400.0">
+               <children>
+                  <Pane prefHeight="47.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@alarm-clock.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="47.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@main-clock.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="47.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Sand-clock.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="47.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="33.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@timer-clock.png" />
+                           </image></ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="500.0" prefWidth="400.0">
+               <children>
+                  <VBox layoutX="63.0" layoutY="32.0" prefHeight="134.0" prefWidth="276.0">
+                     <children>
+                        <HBox prefHeight="74.0" prefWidth="276.0" />
+                     </children>
+                  </VBox>
+                  <Button id="btn1" layoutX="173.0" layoutY="395.0" minWidth="46.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="46.0" stylesheets="@clock_style.css" />
+               </children></AnchorPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
