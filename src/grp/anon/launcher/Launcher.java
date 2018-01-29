@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 public class Launcher extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("../phone/phone.fxml")));
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("../calcy/calcy.fxml")));
         primaryStage.setScene(scene);
         primaryStage.setTitle("Phony - The Android Simulator");
         primaryStage.show();
