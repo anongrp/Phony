@@ -1,0 +1,18 @@
+*{
+
+}
+.frame{
+    -fx-background-image: url("frame.png");
+    -fx-background-size: 520 850;
+    -fx-background-position: center;
+}
+.trans{
+    -fx-background-color: transparent;
+}
+#frame_top{
+    -fx-cursor: hand;
+}
+#body{
+    -fx-background-color: blue;
+    -fx-background-radius: 20;
+}
